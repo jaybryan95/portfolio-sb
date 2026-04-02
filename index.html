@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sujay Bryan - Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img
+            src="./assets/images/my-avatar.png"
+            alt="Sujay Bryan"
+            width="80"
+            data-avatar-img
+            data-avatar-default="./assets/images/my-avatar.png"
+            data-avatar-hover="./assets/images/my-avatarx.png">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Sujay Bryan" data-name-swap>
+            <span class="name-default">Sujay Bryan</span>
+            <svg class="name-batman-mark" viewBox="340 150 180 40" aria-hidden="true">
+              <path d="M360.16414925828576 171.94572171196342 C402.8392925021617 165.7040375410652, 446.0002488869068 170.61483573308942, 496.6860824562609 165.1987461708486"></path>
+              <path d="M489.0233447216451 165.18555853143334 C454.25673318970075 174.74199680083694, 414.927831466106 167.02689830058517, 358.44577607139945 168.35361752286553"></path>
+            </svg>
+            <span class="name-batman" aria-hidden="true">I'm Batman</span>
+          </h1>
+
+          <p class="title">Full-Stack Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:jaybryan95@gmail.com" class="contact-link">jaybryan95@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Kingston, Jamaica</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://linkedin.com/in/sujay-b-bba156151" class="social-link" target="_blank" rel="noopener noreferrer">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Experience</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I’m a <span class="text-accent-strong">Full-Stack Engineer</span> based in Kingston, with a passion for building <span class="text-accent-soft">clean, user-focused applications</span> that solve real problems.
+          </p>
+
+          <p>
+            Over the past <span class="text-accent-strong">7+ years</span>, I’ve worked across the full development lifecycle — from shaping ideas to shipping <span class="text-accent-soft">production-ready products</span>. I enjoy turning complex requirements into simple, intuitive experiences that just feel right.
+            I’m especially drawn to the <span class="text-accent-strong">balance between engineering and design</span> — caring not just about how things work, but how they feel.
+          </p>
+          <p>
+            Outside of building, I’m always learning, experimenting, and refining my craft through <span class="text-accent-soft">new ideas, side projects, and emerging tech</span>.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/ai-icon.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">AI Solutions</h4>
+
+                <p class="service-item-text">
+                  Building intelligent features using AI to enhance products.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Who I've Worked With</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #EXPERIENCE
+      -->
+
+      <article class="experience" data-page="experience">
+
+        <header>
+          <h2 class="h2 article-title">Experience</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <div class="timeline-item-header">
+                <figure class="timeline-logo-box">
+                  <img src="./assets/images/conf.png" alt="Conforma AI logo" loading="lazy">
+                </figure>
+                <div class="timeline-item-meta">
+                  <h4 class="h4 timeline-item-title">Software Engineer &vert; Conforma AI (SaaS Platform)</h4>
+                  <span>2025 — Present</span>
+                </div>
+              </div>
+
+              <p class="timeline-text">
+                Contributing to the architecture and development of a multi-environment SaaS platform for AI-driven
+                content transformation using Blazor WebAssembly, .NET, and JavaScript. Designed modular UI components,
+                implemented secure API integrations, and set up Azure DevOps CI/CD pipelines for development, UAT, and
+                production environments.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <div class="timeline-item-header">
+                <figure class="timeline-logo-box">
+                  <img src="https://media.licdn.com/dms/image/v2/D560BAQGmS3CYkXrS_A/company-logo_200_200/company-logo_200_200/0/1665241453693/alessarcm_logo?e=2147483647&v=beta&t=0yqbkFqPQbt1lgCFm2iFbihH4h8iQjxJC4pguZ7iVfU" alt="Alessa Cloud Solutions logo" loading="lazy">
+                </figure>
+                <div class="timeline-item-meta">
+                  <h4 class="h4 timeline-item-title">Software Developer &vert; Alessa Cloud Solutions</h4>
+                  <span>2021 — 2025</span>
+                </div>
+              </div>
+
+              <p class="timeline-text">
+                Developed a React/TypeScript front-end system serving thousands of users. Deployed builds via Azure
+                DevOps with automated testing and monitoring, architected reusable component libraries, and implemented
+                scalable state management patterns (Redux, Context API) to improve performance and reliability.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <div class="timeline-item-header">
+                <figure class="timeline-logo-box">
+                  <img src="https://www.broadforward.com/wp-content/uploads/2022/02/digicel-logo-freelogovectors.net_.png" alt="Digicel Group Jamaica logo" loading="lazy">
+                </figure>
+                <div class="timeline-item-meta">
+                  <h4 class="h4 timeline-item-title">Software Application Engineer &vert; Digicel Group Jamaica</h4>
+                  <span>2019 — 2021</span>
+                </div>
+              </div>
+
+              <p class="timeline-text">
+                Bridged technical development with business operations across sales and customer service units. Built
+                and optimized internal tools using JavaScript and Python, led stakeholder demos, and maintained
+                enterprise-scale platforms through diagnostics, debugging, and refactoring.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <div class="timeline-item-header">
+                <figure class="timeline-logo-box">
+                  <img src="https://www.broadforward.com/wp-content/uploads/2022/02/digicel-logo-freelogovectors.net_.png" alt="Digicel Group Jamaica logo" loading="lazy">
+                </figure>
+                <div class="timeline-item-meta">
+                  <h4 class="h4 timeline-item-title">IT Operations Service Desk Intern &vert; Digicel Group Jamaica</h4>
+                  <span>2019</span>
+                </div>
+              </div>
+
+              <p class="timeline-text">
+                Documented problem resolutions to improve service efficiency and created a knowledge base for software
+                and hardware issue troubleshooting while providing organization-wide support.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <div class="timeline-item-header">
+                <figure class="timeline-logo-box">
+                  <img src="https://www.sagicor.com/assets/images/sagicor-logo-only.png" alt="Sagicor Bank logo" loading="lazy">
+                </figure>
+                <div class="timeline-item-meta">
+                  <h4 class="h4 timeline-item-title">System Tester / QA &vert; Sagicor Bank</h4>
+                  <span>2018</span>
+                </div>
+              </div>
+
+              <p class="timeline-text">
+                Designed and executed test cases for enterprise banking systems, adhering to strict financial software
+                quality standards and reporting test results to guide release decisions.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <div class="timeline-item-header">
+                <figure class="timeline-logo-box">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO6hUhPgH83VeTJrJJ_39CdaQOtOwFHP6GnA&s" alt="University of Technology, Jamaica logo" loading="lazy">
+                </figure>
+                <div class="timeline-item-meta">
+                  <h4 class="h4 timeline-item-title">University of Technology, Jamaica (UTECH)</h4>
+                  <span>2012 — 2017</span>
+                </div>
+              </div>
+
+              <p class="timeline-text">
+                BSc in Computing and Information Technology. Relevant coursework included Enterprise Computing, Software
+                Engineering, and Data Structures, with active involvement in the UTASCE Club.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">JavaScript, TypeScript &amp; React</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">.NET, C# &amp; Backend APIs</h5>
+                <data value="85">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Mobile (React Native &amp; Flutter)</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Databases &amp; Cloud DevOps</h5>
+                <data value="85">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#"
+                 data-project-item
+                 data-project-description="Enterprise SaaS platform focused on AI-powered content transformation, secure API integrations, and scalable multi-environment deployment workflows."
+                 data-project-stack="Blazor WebAssembly, .NET, C#, JavaScript, Azure DevOps, REST APIs"
+                 data-project-link="https://conforma.ai/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="Conforma Platform" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Conforma Platform</h3>
+
+                <p class="project-category">SaaS Web Application</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#"
+                 data-project-item
+                 data-project-description="MyJam Recipe is a sleek, user-focused mobile application designed to bring authentic Jamaican cuisine into the modern digital experience. It allows users to easily explore a wide variety of traditional island dishes, save their favorites, and follow simple step-by-step cooking instructions. Built with a focus on usability and clean design, MyJam transforms the way users discover and organize recipes—making it effortless to enjoy bold, flavorful Jamaican meals anytime, anywhere."
+                 data-project-stack="Flutter, Dart, Firebase, REST APIs"
+                 data-project-link="">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.jpg" alt="MyJam Recipe App" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MyJam Recipe App</h3>
+
+                <p class="project-category">Mobile Application</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#"
+                 data-project-item
+                 data-project-description="Coombs Paralegal is a professional legal services website designed to provide accessible, reliable support for individuals and businesses. It presents services clearly, making it easy for clients to understand offerings, request assistance, and connect with legal expertise."
+                 data-project-stack="HTML, CSS, JavaScript, Responsive Design"
+                 data-project-link="https://coombsparalegalservices.online/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="Coombs Paralegal" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Coombs Paralegal</h3>
+
+                <p class="project-category">Web Development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#"
+                 data-project-item
+                 data-project-description="Buysight is a smart expense tracking application that transforms everyday receipts into actionable financial insights. By extracting and organizing purchase data, it helps users understand their spending habits, categorize expenses, and make better financial decisions. Designed with a focus on simplicity and efficiency, Buysight turns raw receipt data into clear, meaningful analytics—giving users full visibility into where their money goes."
+                 data-project-stack="React Native, Node.js, Express, MongoDB, OCR, Firebase"
+                 data-project-link="">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.jpg" alt="BuySight" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">BuySight</h3>
+
+                <p class="project-category">Mobile Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#"
+                 data-project-item
+                 data-project-description="Day to Day Plumbing is a clean, user-focused website designed to simplify how customers find and request plumbing services, providing a smooth and trustworthy experience from first visit to service request."
+                 data-project-stack="HTML, CSS, JavaScript, Tailwind CSS, Supabase"
+                 data-project-link="https://daytodayplumbingpa.com/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.jpg" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Day to Day Plumbing</h3>
+
+                <p class="project-category">Web Development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#"
+                 data-project-item
+                 data-project-description="A trivia game built with React, Node.js, and Tailwind CSS, featuring a question and answer format."
+                 data-project-stack="React, Node.js, Tailwind CSS, Supabase, Vercel"
+                 data-project-link="https://tello-app-host-web.vercel.app/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-10.jpg" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Tello Trivia</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#"
+                 data-project-item
+                 data-project-description="Mad A Road is a fast-paced 2D driving game where players must dodge obstacles, stay ahead of chasing vehicles, and survive the chaos of the road. With threats ranging from buses to police cars, the game challenges players to react quickly, time their jumps, and keep moving to avoid capture."
+                 data-project-stack="Unity, C#, 2D Physics, Mobile Optimization"
+                 data-project-link="">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="MyJam" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Mad A Road</h3>
+
+                <p class="project-category">Mobile Game</p>
+
+              </a>
+            </li>
+          </ul>
+
+        </section>
+
+        <div class="project-modal-container" data-project-modal-container>
+
+          <div class="project-overlay" data-project-overlay></div>
+
+          <section class="project-modal">
+
+            <button class="project-modal-close-btn" data-project-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <figure class="project-modal-image-box">
+              <img src="./assets/images/project-1.jpg" alt="Project preview" data-project-modal-img>
+            </figure>
+
+            <div class="project-modal-content">
+              <h3 class="h3 project-modal-title" data-project-modal-title>Project</h3>
+              <p class="project-modal-description" data-project-modal-description>
+                Project description
+              </p>
+              <div class="project-modal-stack" data-project-modal-stack></div>
+
+              <a href="#" class="project-modal-link" target="_blank" rel="noopener noreferrer" data-project-modal-link>
+                Go to Application
+              </a>
+            </div>
+
+          </section>
+
+        </div>
+
+      </article>
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps?q=Kingston,+Jamaica&output=embed"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-cta">
+          <div class="contact-cta-grid">
+            <div>
+              <h3 class="contact-cta-title">Let's talk</h3>
+
+              <ul class="contact-cta-socials">
+                <li>
+                  <a href="https://linkedin.com/in/sujay-b-bba156151" class="contact-cta-social" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:jaybryan95@gmail.com" class="contact-cta-social" aria-label="Email">
+                    <ion-icon name="mail-outline"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:+18765555555" class="contact-cta-social" aria-label="Phone">
+                    <ion-icon name="call-outline"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="contact-cta-info">
+              <p>Kingston, Jamaica</p>
+              <a href="mailto:jaybryan95@gmail.com">jaybryan95@gmail.com</a>
+              <a href="https://linkedin.com/in/sujay-b-bba156151" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
+            </div>
+          </div>
+
+          <div class="contact-cta-bottom">
+            <p>© 2026 All rights reserved by Sujay Bryan</p>
+            <div class="contact-cta-links">
+              <a href="#">Privacy Policy</a>
+              <span>|</span>
+              <a href="#">Terms &amp; Conditions</a>
+            </div>
+          </div>
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
