@@ -18,24 +18,38 @@ sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); }
 if (avatarImg) {
   const defaultAvatar = avatarImg.dataset.avatarDefault || avatarImg.src;
   const hoverAvatar = avatarImg.dataset.avatarHover;
+  const isTouchDevice = window.matchMedia("(hover: none), (pointer: coarse)").matches;
+  let isBatmanModeActive = false;
 
   const showHoverAvatar = function () {
-    if (hoverAvatar) avatarImg.src = hoverAvatar;
+    if (!hoverAvatar) return;
+    avatarImg.src = hoverAvatar;
     if (sidebar) sidebar.classList.add("batman-mode");
+    isBatmanModeActive = true;
   };
 
   const showDefaultAvatar = function () {
     avatarImg.src = defaultAvatar;
     if (sidebar) sidebar.classList.remove("batman-mode");
+    isBatmanModeActive = false;
   };
 
-  avatarImg.addEventListener("mouseenter", showHoverAvatar);
-  avatarImg.addEventListener("mouseleave", showDefaultAvatar);
-  avatarImg.addEventListener("mousedown", showHoverAvatar);
-  avatarImg.addEventListener("mouseup", showDefaultAvatar);
-  avatarImg.addEventListener("touchstart", showHoverAvatar, { passive: true });
-  avatarImg.addEventListener("touchend", showDefaultAvatar);
-  avatarImg.addEventListener("touchcancel", showDefaultAvatar);
+  const toggleAvatarMode = function () {
+    if (isBatmanModeActive) {
+      showDefaultAvatar();
+    } else {
+      showHoverAvatar();
+    }
+  };
+
+  if (isTouchDevice) {
+    avatarImg.addEventListener("click", toggleAvatarMode);
+  } else {
+    avatarImg.addEventListener("mouseenter", showHoverAvatar);
+    avatarImg.addEventListener("mouseleave", showDefaultAvatar);
+    avatarImg.addEventListener("mousedown", showHoverAvatar);
+    avatarImg.addEventListener("mouseup", showDefaultAvatar);
+  }
   avatarImg.addEventListener("dragstart", function (event) { event.preventDefault(); });
 }
 
