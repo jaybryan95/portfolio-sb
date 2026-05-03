@@ -1860,3 +1860,70 @@ main {
   .timeline-text { max-width: 700px; }
 
 }
+
+
+/*-----------------------------------*\
+  #PRIVACY (standalone page)
+\*-----------------------------------*/
+
+article.privacy-article {
+  display: block;
+  max-width: 800px;
+  margin: 24px auto 48px;
+}
+
+.privacy-page .privacy-main {
+  padding: 15px;
+}
+
+.privacy-article .privacy-updated {
+  color: var(--light-gray-70);
+  font-size: var(--fs-8);
+  margin-bottom: 24px;
+}
+
+.privacy-article .privacy-section {
+  margin-bottom: 28px;
+}
+
+.privacy-article .privacy-section h2 {
+  margin-bottom: 12px;
+}
+
+.privacy-article .privacy-section p,
+.privacy-article .privacy-section li {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  line-height: 1.65;
+  margin-bottom: 12px;
+}
+
+.privacy-article .privacy-section ul {
+  padding-left: 1.25em;
+  margin-bottom: 12px;
+}
+
+.privacy-article .privacy-contact-link {
+  color: var(--orange-yellow-crayola);
+  text-decoration: none;
+}
+
+.privacy-article .privacy-contact-link:hover {
+  text-decoration: underline;
+}
+
+.privacy-article .privacy-back {
+  margin-top: 8px;
+  padding-top: 20px;
+  border-top: 1px solid var(--jet);
+}
+
+.privacy-article .privacy-back a {
+  color: var(--orange-yellow-crayola);
+  text-decoration: none;
+  font-size: var(--fs-6);
+}
+
+.privacy-article .privacy-back a:hover {
+  text-decoration: underline;
+}
